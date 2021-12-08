@@ -1,12 +1,12 @@
 # random module
 import random
+
 #generating random number
 num = random.randrange(1,1000)
-print(num)
-#user input
-
 wrong_guess = 0 #count the no of attempt
+
 while True: #run till it is egual to guess
+    #user input
     guess = int(input("Guess the number: "))
 
     if guess > num:#guessed number is greater
@@ -18,6 +18,6 @@ while True: #run till it is egual to guess
     elif guess == num:
         break
 
-
+#Result
 print(f"you guessed it in {wrong_guess} attempt")
 print("Thank You!!!")
