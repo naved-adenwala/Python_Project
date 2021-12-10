@@ -14,25 +14,25 @@ name = Label(win,text="Calculator",font=("Times",20,"bold"),bg="darkgrey").place
 text = StringVar()
 operator = "" #u
 
-
+#on click it will display and perform 
 def on_click(num):
     global operator
-    operator = operator + num
+    operator = operator + num #previous click + new click
     text.set(operator)
-
+#result
 def calculation():
     global operator
     add =str(eval(operator))
     text.set(add)
     operator = ""
 
-
+#clear screen
 def clear():
     text.set("")
 
-
+#display
 inp = Entry(win,font=("Times",12,"bold"),textvar=text,width=40,bd=5,bg="#a2af77").place(x=4,y=40)
-
+#buttons
 but1=Button(win,padx=14,pady=14,bd=4,bg='white',command=lambda:on_click("1"),text="1",font=("TimesNewRoman",16,'bold'))
 but1.place(x=10,y=100)
 
