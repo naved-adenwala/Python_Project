@@ -48,7 +48,7 @@ c3 = Text(wind,height=5,width=20)
 
 #button
 btn = Button(wind,text="Convert",command=convert_in_kg)
-
+#position
 tex.grid(row=0, column=0)
 entr.grid(row=0, column=1)
 g.grid(row=1, column=0)
